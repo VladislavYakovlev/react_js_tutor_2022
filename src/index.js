@@ -4,11 +4,20 @@ import './index.css';
 import 'antd/dist/antd.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Provider } from 'react-redux';
+import { store } from './store';
+
+
+// import {initializeApp} from 'firebase/app'
+// import { firebaseConfig } from './firebase_/firebase_conf';
+
+// initializeApp(firebaseConfig);
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
+  </Provider>
+  ,
   document.getElementById('root')
 );
 

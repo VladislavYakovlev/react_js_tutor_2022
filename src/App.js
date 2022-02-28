@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import React, { Component, useState } from 'react';
-import Todo from './components/Todo/Todo';
+import {Todo} from './components/Todo/Todo';
 import { Navbar } from './components/Navbar/Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // import 
